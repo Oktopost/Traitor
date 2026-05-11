@@ -18,31 +18,31 @@ trait TConstsClass
 	}
 	
 	
-	public static function getConstsAsArray(): array 
+	public static function getConstsAsArray(): array
 	{
 		self::loadConsts();
 		return self::$constsCollection;
 	}
 	
-	public static function getConstNames(): array 
+	public static function getConstNames(): array
 	{
 		self::loadConsts();
 		return array_keys(self::$constsCollection);
 	}
 	
-	public static function getConstValues(): array 
+	public static function getConstValues(): array
 	{
 		self::loadConsts();
 		return array_values(self::$constsCollection);
 	}
 	
-	public static function getConstsCount(): int 
+	public static function getConstsCount(): int
 	{
 		self::loadConsts();
 		return count(self::$constsCollection);
 	}
 	
-	public static function isConstExists(string $name): bool 
+	public static function isConstExists(string $name): bool
 	{
 		self::loadConsts();
 		return isset(self::$constsCollection[$name]);
@@ -52,7 +52,7 @@ trait TConstsClass
 	 * @param mixed $value
 	 * @return bool
 	 */
-	public static function isConstValueExists($value): bool 
+	public static function isConstValueExists($value): bool
 	{
 		self::loadConsts();
 		return in_array($value, self::$constsCollection, true);

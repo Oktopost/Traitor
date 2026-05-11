@@ -5,11 +5,11 @@
 
 Install with composer:
 
-```composer require unstable-cacao/traitor```
+```composer require oktopost/traitor```
 
 Cloning repository:
 
-```git clone git@github.com:unstable-cacao/Traitor.git```
+```git clone git@github.com:oktopost/Traitor.git```
 
 ### Running tests
 

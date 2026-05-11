@@ -25,13 +25,13 @@ trait TEnum
 	}
 	
 	
-	public static function getAll(): array 
+	public static function getAll(): array
 	{
 		self::loadConsts();
 		return array_keys(self::$values);
 	}
 	
-	public static function implodeAll(string $glue = ','): string 
+	public static function implodeAll(string $glue = ','): string
 	{
 		return implode($glue, self::getAll());
 	}
@@ -40,13 +40,13 @@ trait TEnum
 	 * @param string|int $value
 	 * @return bool
 	 */
-	public static function isExists($value): bool 
+	public static function isExists($value): bool
 	{
 		self::loadConsts();
 		return (isset(self::$values[$value]) && self::$values[$value] === $value);
 	}
 	
-	public static function getCount(): int 
+	public static function getCount(): int
 	{
 		self::loadConsts();
 		return count(self::$values);

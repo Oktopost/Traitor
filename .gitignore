@@ -16,3 +16,4 @@ test.php
 # Build dir
 /build
 /Docs/_build
+/.phpunit.result.cache
