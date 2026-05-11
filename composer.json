@@ -1,8 +1,16 @@
 {
-    "name": "unstable-cacao/traitor",
+    "name": "oktopost/traitor",
     "type": "library",
     "license": "MIT",
     "authors": [
+		{
+			"name": "Daniel Podrabinek",
+			"email": "dpodrabinek@gmail.com"
+		},
+		{
+			"name": "Roman Azarov",
+			"email": "azarovroman@gmail.com"
+		},
         {
             "name": "Alexey Puchkov",
             "email": "alexey.pkv@gmail.com"
