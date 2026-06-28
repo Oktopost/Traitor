@@ -42,6 +42,9 @@ trait TEnum
 	 */
 	public static function isExists($value): bool
 	{
+		if (!is_string($value) && !is_int($value))
+			return false;
+		
 		self::loadConsts();
 		return (isset(self::$values[$value]) && self::$values[$value] === $value);
 	}
